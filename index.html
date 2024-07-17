@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diego Piñeyro's portfolio showcasing frontend development skills, services, and projects.">
+    <meta name="keywords" content="Frontend Developer, Web Development, UI/UX Design, Portfolio, Diego Piñeyro">
+    <title>Diego Piñeyro| Frontend Developer Portfolio</title>
+    <link rel="icon" href="favicon/Favicon.png" type="image/jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionales para el botón de modo oscuro */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .dark-mode-toggle i {
+            font-size: 24px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projects</a>
+    </nav>
+    <!-- Botón de modo oscuro -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+        <i class='bx bx-moon'></i>
+    </button>
+</header>
+
+<div id="top"></div>
+
+<section id="home" class="Home">
+    <div class="home-content">
+        <h3><span>Diego Piñeyro</span></h3>
+        <h1>Frontend Developer</h1>
+        <p>Welcome to my portfolio. Let's build something awesome together!</p>
+        <div class="social-media">
+            <a href="mailto:diegopineyro.dev@gmail.com" class="social-link circle"><i class='bx bxl-gmail'></i></a>
+            <a href="https://github.com/Diego29012" class="social-link"><i class='bx bxl-github'></i></a>
+            <a href="https://wa.me/59895127158" class="social-link circle"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        
+    </div>
+    <div class="home-img">
+        <img src="images/home.png" alt="Home Image">
+    </div>
+</section>
+
+<section id="services" class="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-block'></i>
+            <h3>Web Development</h3>
+            <p>I create responsive and user-friendly websites using the latest technologies.</p>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-paint'></i>
+            <h3>UI/UX Design</h3>
+            <p>I design intuitive interfaces focusing on user experience to enhance digital products.</p>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-palette'></i>
+            <h3>Customization</h3>
+            <p>I customize templates and themes to meet specific client needs.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h2 class="section-title">Projects</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="Images/Portfolio 1.png" alt="Portfolio Image">
+            <div class="portfolio-layer">
+                
+               
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/Portfolio 2.png" alt="Portfolio Image">
+            <div class="portfolio-layer">
+                
+                
+                
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/Portfolio 3.png" alt="Portfolio Image">
+            <div class="portfolio-layer">
+                
+                
+                
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/Portfolio 4.png" alt="Portfolio Image">
+            <div class="portfolio-layer">
+                
+                
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/Portfolio 5.png" alt="Portfolio Image">
+            <div class="portfolio-layer">
+                
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/Portfolio 6.png" alt="Portfolio Image">
+            <div class="portfolio-layer">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+    }
+</script>
+
+</body>
+</html>
